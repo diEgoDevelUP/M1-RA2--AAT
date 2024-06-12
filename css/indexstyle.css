@@ -1,0 +1,169 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        'head head img1'
+        'nav nav nav'
+        'mis mapa vis'
+        'foot foot img';
+}
+
+header {
+    grid-area: head;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 250px;
+}
+
+#redes {
+    grid-area: img1;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+#redes a img {
+    width: 50px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#redes a #inst {
+    width: 70px;
+}
+
+nav {
+    margin-bottom: 10px;
+    grid-area: nav;
+    border: 1px solid black;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+aside,
+main,
+section {
+    margin: 20px;
+}
+
+aside {
+    grid-area: mis;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+main {
+    grid-area: mapa;
+}
+
+section {
+    grid-area: vis;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+footer {
+    border: 1px solid black;
+    grid-area: foot;
+}
+
+#imgfooter {
+    border: 1px solid black;
+    grid-area: img;
+}
+
+#imgfooter img {
+    width: 250px;
+    height: 250px;
+}
+
+footer,
+#imgfooter {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            'head'
+            'img1'
+            'nav'
+            'mis'
+            'mapa'
+            'vis'
+            'foot'
+            'img';
+    }
+  
+    header {
+        grid-area: head;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    
+    header img {
+        width: 50px;
+    }
+
+    #redes {
+        width: 100%;
+        grid-area: img1;
+        margin-left: auto;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    #redes a img {
+        width: 40px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    
+    #redes a #inst {
+        width: 70px;
+    }
+  
+    nav {
+      flex-wrap: wrap; 
+    }
+
+    main {
+        grid-area: mapa;
+        display: flex;
+        justify-content: center;
+    }
+  
+    header img,
+    #imgfooter img {
+      width: 80%; 
+    }
+  
+    #imgfooter img {
+        width: 200px;
+        height: 200px;
+    }
+  }

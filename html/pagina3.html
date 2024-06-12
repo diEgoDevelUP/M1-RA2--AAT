@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pagina3style.css">
+    <script src="../ts/CalcularIndemnizacion.js"></script>
+    <link rel="icon" href="../imagenes/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Indemnizacion</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="../imagenes/intecap_logo_1.png" alt="Logo intecap" class="animate__animated animate__bounce">
+        </header>
+        <article id="redes">
+            <a href="https://www.facebook.com/intecapoficial"><img src="../imagenes/facebook.png" alt="" class="animate__animated animate__bounce"></a>
+            <a href="https://x.com/intecapoficial"><img src="../imagenes/X.avif" alt="" class="animate__animated animate__bounce"></a>
+            <a href="https://www.instagram.com/intecapoficial/"><img src="../imagenes/inst.jfif" alt="" class="animate__animated animate__bounce"></a>
+            <a href="https://www.youtube.com/@intecapoficial"><img src="../imagenes/youtube.png" alt="" class="animate__animated animate__bounce"></a>
+            <a href="https://www.linkedin.com/feed/"><img src="../imagenes/linkedin.avif" alt="" class="animate__animated animate__bounce"></a>
+        </article>
+        <nav>
+            <a href="../index.html" class="animate__animated animate__jackInTheBox">Inicio</a>
+            <a href="pagina2.html" class="animate__animated animate__jackInTheBox">Sueldo Liquido</a>
+            <a href="pagina3.html" class="animate__animated animate__jackInTheBox">Indemnizacion</a>
+        </nav>
+        <main>
+            <div class="contenedor">
+                <h1>Indemnizacion</h1>
+                <form id="form1">
+                    <div>
+                        <label for="txtSueldo">Sueldo</label>
+                        <br>
+                        <input class="inp" type="number" id="txtSueldo">
+                    </div>
+                    <div>
+                        <label for="txtTrabajados">Años trabajados</label>
+                        <br>
+                        <input class="inp" type="number" id="txtTrabajados">
+                    </div>
+                    <div>
+                        <label for="txtBonocat">Bono Catorce</label>
+                        <br>
+                        <textarea class="inp" id="txtBonocat" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <label for="txtAguinaldo">Aguinaldo</label>
+                        <br>
+                        <textarea class="inp" id="txtAguinaldo" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <label for="txtSalarioPen">Salario pendiente</label>
+                        <br>
+                        <input class="inp" type="number" id="txtSalarioPen">
+                    </div>
+                    <div>
+                        <label for="txtDeudas">Deudas</label>
+                        <br>
+                        <input class="inp" type="number" id="txtDeudas">
+                    </div>
+                    <div>
+                        <label for="txtIndemnizacion">Indemnizacion</label>
+                        <br>
+                        <textarea class="inp" id="txtIndemnizacion" rows="6"></textarea>
+                    </div>
+                </form>
+                <div class="boton">
+                    <button id="butonFinal" type="button" onclick="mostrarValoresTotales()">Indemnizacion</button>
+                </div>
+            </div>
+        </main>
+        <article>
+            <img src="../imagenes/intecap52.png" alt="Logo Intecap" class="animate__animated animate__bounce">
+        </article>
+    </div>
+</body>
+
+</html>

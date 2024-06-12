@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pagina2style.css">
+    <script src="../ts/CalcularSueldoLiquido.js"></script>
+    <link rel="icon" href="../imagenes/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Sueldo Liquido</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="../imagenes/intecap_logo_1.png" alt="Logo intecap" class="animate__animated animate__bounce">
+        </header>
+        <article id="redes">
+            <a href="https://www.facebook.com/intecapoficial"><img src="../imagenes/facebook.png" alt="" class="animate__animated animate__bounce"></a>
+            <a href="https://x.com/intecapoficial"><img src="../imagenes/X.avif" alt="" class="animate__animated animate__bounce"></a>
+            <a href="https://www.instagram.com/intecapoficial/"><img src="../imagenes/inst.jfif" alt="" class="animate__animated animate__bounce"></a>
+            <a href="https://www.youtube.com/@intecapoficial"><img src="../imagenes/youtube.png" alt="" class="animate__animated animate__bounce"></a>
+            <a href="https://www.linkedin.com/feed/"><img src="../imagenes/linkedin.avif" alt="" class="animate__animated animate__bounce"></a>
+        </article>
+        <nav>
+            <a href="../index.html" class="animate__animated animate__jackInTheBox">Inicio</a>
+            <a href="pagina2.html" class="animate__animated animate__jackInTheBox">Sueldo Liquido</a>
+            <a href="pagina3.html" class="animate__animated animate__jackInTheBox">Indemnizacion</a>
+        </nav>
+        <main>
+            <div class="cont">
+                <div id="form1">
+                    <h1>INGRESOS</h1>
+                    <form>
+                        <div>
+                            <label for="txtSalario">Salario</label>
+                            <br>
+                            <input class="inp" type="number" id="txtSalario">
+                        </div>
+                        <div>
+                            <label for="txtBonificacion">Bonificacion</label>
+                            <br>
+                            <input class="inp" type="number" id="txtBonificacion">
+                        </div>
+                        <div>
+                            <label for="txtComisiones">Comisiones</label>
+                            <br>
+                            <input class="inp" type="number" id="txtComisiones">
+                        </div>
+                        <div>
+                            <label for="txtTotal1">Total Ingresos</label><br>
+                            <textarea id="txtTotal1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div id="form2">
+                    <h1>EGRESOS</h1>
+                    <form>
+                        <div>
+                            <label for="txtAhorro">Ahorro</label>
+                            <br>
+                            <input class="inp" type="number" id="txtAhorro">
+                        </div>
+                        <div>
+                            <label for="txtIgss">IGSS</label>
+                            <br>
+                            <textarea class="inp" id="txtIgss"></textarea>
+                        </div>
+                        <div>
+                            <label for="txtDescuentos">Prestamos/Otros descuentos</label>
+                            <br>
+                            <input class="inp" type="number" id="txtDescuentos">
+                        </div>
+                        <div>
+                            <label for="txtTotalEgre">Total Egresos</label><br>
+                            <textarea id="txtTotalEgre" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bot">
+                <button id="boton" onclick="mostrarTotalSueldo()" type="button">Obtener Sueldo Liquido</button>
+                <br>
+                <div class="textoMostrado">
+                    <textarea id="txtNewTotal" rows="3">El sueldo es:</textarea>
+                </div>
+            </div>
+        </main>
+        <section>
+            <img src="../imagenes/intecap52.png" alt="Logo de intecap" class="animate__animated animate__bounce">
+        </section>
+    </div>
+</body>
+
+</html>
